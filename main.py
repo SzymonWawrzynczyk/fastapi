@@ -7,4 +7,9 @@ app = FastAPI()
 
 @app.get("/")
 def home():
-    return {"message":"Hello TutLinks.com"}
+    return {"message":"Hello World"}
+
+
+@app.get("/add/")
+async def read_item(skip: a = 0, limit: b = 10):
+    return a+b
