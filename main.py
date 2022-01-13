@@ -11,5 +11,5 @@ def home():
 
 
 @app.get("/add/")
-async def read_item(skip: a = 0, limit: b = 10):
+async def read_item(a: int = 0, b: int = 0):
     return a+b
